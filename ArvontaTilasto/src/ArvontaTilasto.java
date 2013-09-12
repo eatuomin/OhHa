@@ -5,7 +5,7 @@
 
 /**
  *
- * @author Esko
+ * @author Esko Tuominen
  */
 public class ArvontaTilasto {
 
@@ -13,6 +13,52 @@ public class ArvontaTilasto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*Kilpailija esko = new Kilpailija("Esko");
+        
+        System.out.println(esko);
+        
+        esko.voitonLisays();
+        esko.osallistumisenLisays();
+        
+        System.out.println(esko);
+        
+        for (int i = 0; i < 15; i++) {
+            esko.voitonLisays();
+        }
+        
+        for (int i = 0; i < 15; i++) {
+            esko.osallistumisenLisays();
+        }
+        
+        
+        
+        System.out.println(esko);
+        */
     }
 }
