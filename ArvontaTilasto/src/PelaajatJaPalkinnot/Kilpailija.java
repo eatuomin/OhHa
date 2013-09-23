@@ -41,6 +41,8 @@ public class Kilpailija {
         return this.osallistumiskerrat;
     }   
     
+    
+    @Override
     public String  toString() {
         return this.nimi + ", " + this.osallistumiskerrat + " osallistumiskertaa, " + this.voittojenLukumaara + " voittoa";
     }

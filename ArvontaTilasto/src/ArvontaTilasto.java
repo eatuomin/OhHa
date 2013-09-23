@@ -7,6 +7,10 @@
  *
  * @author Esko Tuominen
  */
+import PelaajatJaPalkinnot.Palkinto;
+import PelaajatJaPalkinnot.Kilpailija;
+import Toiminnallisuus.Arvonta;
+
 public class ArvontaTilasto {
 
     /**
@@ -14,7 +18,23 @@ public class ArvontaTilasto {
      */
     public static void main(String[] args) {
         
+        Arvonta arvonta = new Arvonta();
         
+        Kilpailija pekka = new Kilpailija("Pekka");
+        Kilpailija aino = new Kilpailija("Aino");
+        Kilpailija juuso = new Kilpailija("Juuso");
+        Kilpailija tenho = new Kilpailija("Tenho");
+        
+        arvonta.lisaaKilpailija(pekka);
+        arvonta.lisaaKilpailija(aino);
+        arvonta.lisaaKilpailija(juuso);
+        arvonta.lisaaKilpailija(tenho);
+        
+        arvonta.maaritaPalkinto("Jakkara", 2.5);
+        
+        
+        System.out.println(arvonta);
+        arvonta.tulostaKilpailijat();
         
         
 

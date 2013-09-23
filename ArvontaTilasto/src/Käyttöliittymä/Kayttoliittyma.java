@@ -4,6 +4,8 @@
  */
 package Käyttöliittymä;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Esko
