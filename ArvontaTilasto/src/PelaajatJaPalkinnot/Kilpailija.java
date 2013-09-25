@@ -44,7 +44,7 @@ public class Kilpailija {
     
     @Override
     public String  toString() {
-        return this.nimi + ", " + this.osallistumiskerrat + " osallistumiskertaa, " + this.voittojenLukumaara + " voittoa";
+        return this.nimi + "\t\t " + this.osallistumiskerrat + " osallistumiskertaa\t " + this.voittojenLukumaara + " voittoa";
     }
     
 }

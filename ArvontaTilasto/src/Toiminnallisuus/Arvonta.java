@@ -32,6 +32,14 @@ public class Arvonta {
         this.kilpailijat.add(kilpailija);
     }
     
+    public void poistaKilpailija(Kilpailija kilpailija) {
+        this.kilpailijat.remove(kilpailija);
+    }
+    
+    public void poistaKilpailijaIndeksi(int indeksi) {
+        this.kilpailijat.remove(indeksi);
+    }
+    
     public void maaritaPalkinto(String nimi, double panos) {
         this.palkinto = new Palkinto(nimi, panos);
     }
@@ -48,8 +56,11 @@ public class Arvonta {
      *
      */
     public void  tulostaKilpailijat() {
-        for (Kilpailija k : kilpailijat) {
+        int i = 1;
+        for (Kilpailija k : kilpailijat) { 
+            System.out.print("["+i+"]");
             System.out.println(k);
+            i++;
         }
     }
     

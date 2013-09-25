@@ -10,6 +10,8 @@
 import PelaajatJaPalkinnot.Palkinto;
 import PelaajatJaPalkinnot.Kilpailija;
 import Toiminnallisuus.Arvonta;
+import Käyttöliittymä.Kayttoliittyma;
+import java.util.*;
 
 public class ArvontaTilasto {
 
@@ -18,7 +20,50 @@ public class ArvontaTilasto {
      */
     public static void main(String[] args) {
         
-        Arvonta arvonta = new Arvonta();
+        Scanner lukija = new Scanner(System.in);
+        
+        Kayttoliittyma kayttoliittyma = new Kayttoliittyma(lukija);
+        kayttoliittyma.kaynnista();
+        
+    
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*  Arvonta arvonta = new Arvonta();
         
         Kilpailija pekka = new Kilpailija("Pekka");
         Kilpailija aino = new Kilpailija("Aino");
@@ -36,26 +81,14 @@ public class ArvontaTilasto {
         System.out.println(arvonta);
         arvonta.tulostaKilpailijat();
         
-        
-
-        
+        */
         
         
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       
         
         
         
