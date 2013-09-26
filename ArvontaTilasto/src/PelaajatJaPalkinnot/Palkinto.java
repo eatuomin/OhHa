@@ -1,5 +1,7 @@
 package PelaajatJaPalkinnot;
 
+import java.util.Calendar;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,11 +14,12 @@ package PelaajatJaPalkinnot;
 public class Palkinto {
     private String nimi;
     private double panos;
+    private Calendar paivamaara;
     
     //Luodaan konstruktori
-    public Palkinto (String nimi, double panos) {
+    public Palkinto (String nimi) {
         this.nimi = nimi;
-        this.panos = panos;
+        this.paivamaara = Calendar.getInstance();
     }
     
     public String getNimi() {
@@ -27,12 +30,12 @@ public class Palkinto {
         this.nimi = nimi;
     }
     
-    public double getPanos() {
-        return this.panos;
+    public void setPaivamaara(int vuosi, int kuukausi, int paiva) {
+        paivamaara.set(vuosi, kuukausi, paiva);        
     }
     
-    public void setPanos(double panos) {
-        this.panos = panos;
+    public Calendar getPaivamaara() {
+        return this.paivamaara;
     }
     
     

@@ -12,20 +12,17 @@ package Toiminnallisuus;
 import PelaajatJaPalkinnot.Palkinto;
 import PelaajatJaPalkinnot.Kilpailija;
 import java.util.ArrayList;
-import java.util.HashMap;
-//import java.text.SimpleDateFormat;
-//import java.util.Date;
 
 public class Arvonta {
     private int monesko;
     private ArrayList<Kilpailija> kilpailijat;
-    private Palkinto palkinto;
-    //private Date paivamaara;
+    private ArrayList<Palkinto> palkinnot;
+    
     
     public Arvonta() {
         this.monesko = 1;
         this.kilpailijat = new ArrayList<Kilpailija>();
-        this.palkinto = palkinto;
+        this.palkinnot = new ArrayList<Palkinto>();
     }
     
     public void lisaaKilpailija(Kilpailija kilpailija) {
@@ -40,8 +37,8 @@ public class Arvonta {
         this.kilpailijat.remove(indeksi);
     }
     
-    public void maaritaPalkinto(String nimi, double panos) {
-        this.palkinto = new Palkinto(nimi, panos);
+    public void luoJaArvoPalkinto(Palkinto palkinto) {
+        this.palkinnot.add(palkinto);
     }
     
     
@@ -55,6 +52,7 @@ public class Arvonta {
     /**
      *
      */
+    //Tulostetaan kilpailijat numeroituna
     public void  tulostaKilpailijat() {
         int i = 1;
         for (Kilpailija k : kilpailijat) { 

@@ -4,16 +4,14 @@
  */
 package Käyttöliittymä;
 
-import PelaajatJaPalkinnot.Palkinto;
 import PelaajatJaPalkinnot.Kilpailija;
 import Toiminnallisuus.Arvonta;
-import Käyttöliittymä.Kayttoliittyma;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Esko
+ * @author Esko Tuominen
  */
 public class Kayttoliittyma {
     private Scanner lukija;
@@ -26,7 +24,7 @@ public class Kayttoliittyma {
     
     public void kaynnista() {
         while (true) {
-            System.out.println("Lista komennoista:\n(1) Lisää käyttäjä.\n(2) Poista käyttäjä.\n(3) Listaa käyttäjät.\n(q) Lopeta.");
+          //  System.out.println("Lista komennoista:\n(1) Lisää käyttäjä.\n(2) Poista käyttäjä.\n(3) Listaa käyttäjät.\n(q) Lopeta.");
             
             String komento = lukija.nextLine();
             
@@ -54,7 +52,7 @@ public class Kayttoliittyma {
     private boolean komentoLisaaKayttaja() {
         Kilpailija kilpailija = lueKayttaja();
         
-        //
+        //Lisätään ArrayListiin uusi kilpailija, kunhan nimeksi on annettu jotain.
         if (kilpailija != null) {
             arvonta.lisaaKilpailija(kilpailija);
         }        
