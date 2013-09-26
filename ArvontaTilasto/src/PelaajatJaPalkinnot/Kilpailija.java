@@ -37,6 +37,12 @@ public class Kilpailija {
         return this.voittojenLukumaara;
     }
     
+    //Tarvitaan tietoja ladattaessa
+    public int setVoittojenLukumaara(int lkm) {
+        this.voittojenLukumaara = lkm;
+        return this.voittojenLukumaara;
+    }
+    
     public int getOsallistumiskerrat() {
         return this.osallistumiskerrat;
     }   
