@@ -19,13 +19,13 @@ import java.util.HashMap;
 public class Arvonta {
     private int monesko;
     private ArrayList<Kilpailija> kilpailijat;
-    private Palkinto palkinto;
+    private ArrayList<Palkinto> palkinnot;
     //private Date paivamaara;
     
     public Arvonta() {
         this.monesko = 1;
         this.kilpailijat = new ArrayList<Kilpailija>();
-        this.palkinto = palkinto;
+        this.palkinnot = new ArrayList<Palkinto>();
     }
     
     public void lisaaKilpailija(Kilpailija kilpailija) {
@@ -40,10 +40,11 @@ public class Arvonta {
         this.kilpailijat.remove(indeksi);
     }
     
-    public void maaritaPalkinto(String nimi, double panos) {
-        this.palkinto = new Palkinto(nimi, panos);
+    /*
+    public void maaritaPalkinto(String nimi) {
+        this.palkinnot = new Palkinto(nimi);
     }
-    
+    */
     
     /**
      *
@@ -51,6 +52,12 @@ public class Arvonta {
     public void arvontakierroksenKasvatus() {
         this.monesko = monesko + 1;
     }
+    
+    public int getArvontakierros() {
+        return this.monesko;
+    }
+    
+    
     
     /**
      *
@@ -70,8 +77,7 @@ public class Arvonta {
        
     @Override
     public String toString() {
-        return "Arvontakierros #" + monesko + "\n"
-                + "Osallistujat:\n";
+        return  "Arvontakierros "+monesko+" Kilpailija indeksistä 0: " + kilpailijat.get(0);
                 
     }
     

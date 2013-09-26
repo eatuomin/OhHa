@@ -26,7 +26,7 @@ public class Kayttoliittyma {
     
     public void kaynnista() {
         while (true) {
-            System.out.println("Lista komennoista:\n(1) Lisää käyttäjä.\n(2) Poista käyttäjä.\n(3) Listaa käyttäjät.\n(q) Lopeta.");
+       //     System.out.println("Lista komennoista:\n(1) Lisää käyttäjä.\n(2) Poista käyttäjä.\n(3) Listaa käyttäjät.\n(q) Lopeta.");
             
             String komento = lukija.nextLine();
             
@@ -90,7 +90,7 @@ public class Kayttoliittyma {
         
     }
     
-    public void komentoPoistaKayttaja() {        
+    private void komentoPoistaKayttaja() {        
         System.out.println("Kenet haluat poistaa?");
         komentoTulostaKayttajat();
         System.out.print("\nAnna indeksi: ");
@@ -99,6 +99,14 @@ public class Kayttoliittyma {
         arvonta.poistaKilpailijaIndeksi(poistettava-1);
             
         }
+    
+    /*
+    private void lisaaPalkinto() {
+        System.out.println("Anna palkinnon nimi: ");
+        String palkinnonNimi = lukija.nextLine();
+        arvonta.maaritaPalkinto(palkinnonNimi);
+    }
+    */
         
    
     

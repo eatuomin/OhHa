@@ -20,7 +20,10 @@ public class ArvontaTilasto {
      */
     public static void main(String[] args) {
         
-        Scanner lukija = new Scanner(System.in);
+        
+       
+        
+       Scanner lukija = new Scanner(System.in);
         
         Kayttoliittyma kayttoliittyma = new Kayttoliittyma(lukija);
         kayttoliittyma.kaynnista();
@@ -38,7 +41,19 @@ public class ArvontaTilasto {
         
         
         
+       /*  Arvonta arvonta = new Arvonta();
         
+        Kilpailija pekka = new Kilpailija("Pekka");
+        Kilpailija aino = new Kilpailija("Aino");
+        Kilpailija juuso = new Kilpailija("Juuso");
+        Kilpailija tenho = new Kilpailija("Tenho");
+        
+        arvonta.lisaaKilpailija(pekka);
+        arvonta.lisaaKilpailija(aino);
+        arvonta.lisaaKilpailija(juuso);
+        arvonta.lisaaKilpailija(tenho);
+        
+        System.out.println(arvonta);*/
         
         
         

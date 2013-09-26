@@ -11,12 +11,10 @@ package PelaajatJaPalkinnot;
  */
 public class Palkinto {
     private String nimi;
-    private double panos;
     
     //Luodaan konstruktori
-    public Palkinto (String nimi, double panos) {
+    public Palkinto (String nimi) {
         this.nimi = nimi;
-        this.panos = panos;
     }
     
     public String getNimi() {
@@ -26,7 +24,7 @@ public class Palkinto {
     public void setNimi(String nimi) {
         this.nimi = nimi;
     }
-    
+    /*
     public double getPanos() {
         return this.panos;
     }
@@ -34,7 +32,7 @@ public class Palkinto {
     public void setPanos(double panos) {
         this.panos = panos;
     }
-    
+    */
     
     
 }
